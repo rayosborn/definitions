@@ -319,6 +319,17 @@ https://stackoverflow.com/a/48980995/1046449 -->
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
+		<xs:attribute name="domain" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					Define a domain that the definition applies to. This is
+                    an optional attribute that allows NXDL ``base`` classes
+                    to be sorted into more specialized categories. If the
+                    attribute is not given, it will be assumed that the
+                    ``base`` class applies to multiple domains.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 		<xs:attribute name="ignoreExtraGroups" use="optional" type="nx:NX_BOOLEAN" default="false">
 			<xs:annotation>
 				<xs:documentation>
